@@ -21,9 +21,36 @@
 
     <!-- tailwind -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+            /* fonts */
+
+            .font_poppins {
+                font-family: "Poppins", serif;
+            }
+    </style>
+
   </head>
-  <body>
-    <h1>Hello, World!</h1>
+  <body class="bg-[#F4F7FF] font_poppins">
+    <header class="mt-6 ml-[140px] mr-[140px] bg-white rounded-2xl">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-1 m-6">
+                <img src="assets/logo.png" alt="">
+                <h2 class="font-light text-4xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+
+            <div class="flex justify-center items-center gap-8 m-6">
+                <div class="flex justify-between items-center gap-4 bg-[#F4F7FF] p-3 rounded-full">
+                    <img src="assets/checkbox.png" alt="">
+                    <p><span class="font-bold text-3xl">23</span></p>
+                </div>
+                <div class="bg-[#F4F7FF] p-3 rounded-full">
+                    <img src="assets/theme-btn.png" alt="">
+                </div>
+
+            </div>
+        </nav>
+    </header>
 
     <script src="script/utilities.js"></script>
     <script src="script/main.js"></script>
