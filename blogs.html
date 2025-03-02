@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+            /* fonts */
+            .font_poppins {
+                font-family: "Poppins", serif;
+            }
+    </style>
+
+  </head>
+  <body class="bg-[#F4F7FF] font_poppins text-[#00303C]">
+    <header class="mt-6 ml-4 md:ml-[140px] mr-4 md:mr-[140px] bg-white rounded-2xl drop-shadow-sm">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-1 m-6">
+                <img src="assets/logo.png" alt="">
+                <h2 class="font-light text-4xl text-[#00303C]">Dev<span class="font-bold">Board</span></h2>
+            </div>
+
+            <div class="mr-6">
+                <a href="index.html">
+                <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Back to Desk</button></a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mt-6 ml-4 md:ml-[140px] mr-4 md:mr-[140px]">
+            <h1 class="font-bold text-4xl m-4 text-center">Blogs</h1>
+            <div class="bg-white rounded-2xl drop-shadow-sm">
+                <div class="p-6 border-b-2 border-dashed border-b-[#CED6FF]">
+                    <p class="text-2xl font-medium">Question-1: What are the different ways to select an element in the DOM?</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <script src="script/utilities.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
