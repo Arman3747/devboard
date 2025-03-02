@@ -54,7 +54,18 @@
                     <p class="text-2xl font-medium">Question-1: What are the different ways to select an element in the DOM?</p>
                 </div>
                 <div class="p-6">
-                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                    <p class="text-xl  font-normal">
+                        There are 5 ways to select an element in the DOM.
+                        They are:
+                        <br><br>
+                        01 . getElementById()<br>
+                        02 . getElementsByClassName()<br>
+                        03 . getElementsByTagName() <br>
+                        04 . querySelector() =>eg. querySelector('.fruits-class') <br>
+                        05 . querySelectorAll() => 2 types using id and class. <br>
+                        05a . querySelectorAll('#fruit-id') <br>
+                        05b . querySelectorAll('.fruit-class') <br>
+                    </p>
                 </div>
             </div>
 
@@ -65,7 +76,22 @@
                     <p class="text-2xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
                 </div>
                 <div class="p-6">
-                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                    <p class="text-xl  font-normal">
+                        innerHTML:
+                        <br>
+                        We can get or set the HTML content from the JavaScript object. innerHTML returns us the content and tags both together. For example innerHTML is returning us the full tag: - &lt;div class="font-bold"&gt;&lt;p&gt;Hello, World!&lt;/p&gt;&lt;/div&gt;.
+                        <br>
+                        <br>
+                        innerText:
+                        <br>
+                        We can get of set only the visible text content inside a tag. It does not give us the HTML tag. For Example we can only get:- "Hello, World!". And it does not give us the tag.
+                        <br>
+                        <br>
+                        textContent:
+                        <br>
+                        We can get or set the HTML content from the JavaScript. It also gives us the hidden elements. For example: 
+                        &lt;!-- &lt;div class="font-bold"&gt;&lt;p&gt;Hello, World!&lt;/p&gt;&lt;/div&gt; --&gt;
+                    </p>
                 </div>
             </div>
 
@@ -76,7 +102,9 @@
                     <p class="text-2xl font-medium">Question-3: What is event delegation in the DOM?</p>
                 </div>
                 <div class="p-6">
-                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                    <p class="text-xl  font-normal">
+                        In Event delegation, a parent node handles all the events for the child node. Helps to code less as we can call the parent node and allocate the task to its child node.
+                    </p>
                 </div>
             </div>
 
@@ -87,30 +115,40 @@
                     <p class="text-2xl font-medium">Question-4: What is event bubbling in the DOM?</p>
                 </div>
                 <div class="p-6">
-                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                    <p class="text-xl  font-normal">
+                        Event bubbling is the process where an event triggered on a child element it goes up to its parent elements which allows the parents to handle the event.
+                    </p>
                 </div>
             </div>
 
             <!-- Question 05 -->
-             
+
             <div class="bg-white rounded-2xl drop-shadow-sm mb-4">
                 <div class="p-6 border-b-2 border-dashed border-b-[#CED6FF]">
                     <p class="text-2xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</p>
                 </div>
                 <div class="p-6">
-                    <p class="text-xl  font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolore veritatis dolor, exercitationem quam vero, itaque esse fuga fugiat quo molestias eos iste. Quo eum sed quod ab. Ut, quasi?</p>
+                    <p class="text-xl  font-normal">
+                        Create elements:
+                        <br>
+                        To create an element we can use => createElement();
+                        <br>
+                        <br>
+                        Add elements:
+                        <br>
+                        To add an element we can use => appendChild();
+                        <br>
+                        <br>
+                        Remove elements:
+                        <br>
+                        To remove an element we can use => removeChild();
+                    </p>
                 </div>
             </div>
-
-
         </section>
-
-
-
-
     </main>
 
-    <script src="script/utilities.js"></script>
+    <!-- scripts -->
     <script src="script/main.js"></script>
   </body>
 </html>

@@ -14,6 +14,7 @@ for(let i = 0; i < items.length; i++) {
         const taskRemaining = document.getElementById('task-remaining');
         const numberCountingString = taskRemaining.innerText;
         let numberCountingNumber = parseInt(numberCountingString);
+        //Final alert
         if(numberCountingNumber === 1)
         {
             alert("Congratulations! You have completed all the current tasks.");
@@ -22,7 +23,7 @@ for(let i = 0; i < items.length; i++) {
         numberCountingNumber -=1;
         taskRemaining.innerText = numberCountingNumber;
 
-        //03 - task completed task-completed
+        //03 - task completed
         const taskCompleted = document.getElementById('task-completed');
         const taskCompletedString = taskCompleted.innerText;
         let taskCompletedNumber = parseInt(taskCompletedString);
@@ -120,9 +121,4 @@ document.getElementById('blog-link').addEventListener('click',function(){
 
     window.location.href="blogs.html";
 });
-
-
-
-
-
 
