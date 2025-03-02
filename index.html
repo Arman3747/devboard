@@ -31,8 +31,8 @@
     </style>
 
   </head>
-  <body class="bg-[#F4F7FF] font_poppins text-[#00303C]">
-    <header class="mt-6 ml-4 md:ml-[140px] mr-4 md:mr-[140px] bg-white rounded-2xl">
+  <body id="body-id" class="bg-[#F4F7FF]">
+    <header class="mt-6 ml-4 md:ml-[140px] mr-4 md:mr-[140px] bg-white rounded-2xl font_poppins text-[#00303C]">
         <nav class="flex justify-between items-center">
             <div class="flex items-center gap-1 m-6">
                 <img src="assets/logo.png" alt="">
@@ -42,16 +42,16 @@
             <div class="flex justify-center items-center gap-8 m-6">
                 <div class="flex justify-between items-center gap-4 bg-[#F4F7FF] p-3 rounded-full">
                     <img src="assets/checkbox.png" alt="">
-                    <p><span class="font-bold text-3xl text-[#00303C]">23</span></p>
+                    <p class="font-bold text-3xl text-[#00303C]"><span id="task-completed">23</span></p>
                 </div>
                 <div class="bg-[#F4F7FF] p-3 rounded-full">
-                    <img src="assets/theme-btn.png" alt="">
+                    <img id="change-color" src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="font_poppins text-[#00303C]">
         <section class="mt-6 ml-4 md:ml-[140px] mr-4 md:mr-[140px]">
             <div class="grid grid-cols-2 md:grid-cols-12 gap-6">
                 <div class="col-span-1 md:col-span-9 bg-white rounded-2xl">
@@ -70,7 +70,7 @@
                         </div>
                         
                         <!-- Blog Links -->
-                        <div class="gap-6 col-span-1 md:col-span-5 flex justify-center items-center bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
+                        <div id="blog-link" class="gap-6 col-span-1 md:col-span-5 flex justify-center items-center bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
                             <img src="assets/board.png" alt="">
                             <p class="text-white text-2xl font-medium text-[#00303C]">Discover Something<br>New Today!</p>
                         </div>
@@ -80,7 +80,7 @@
                             <div class="bg-white p-4 rounded-full">
                                 <img src="assets/calender.png" alt="">
                             </div>
-                            <p class="text-[#00303C]"><span class="font-normal text-2xl">Wed</span>,<br><span class="font-bold text-2xl">Jul 28 2025</span></p>
+                            <p class="text-[#00303C]"><span id="week-day" class="font-normal text-2xl">Wed</span>,<br><span id="month-date-year" class="font-bold text-2xl">Jul 28 2025</span></p>
                         </div>
                     </div>
 
@@ -105,7 +105,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="btn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button id="" class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                         <div class="col-span-1 md:col-span-3 bg-[#F4F7FF] p-6 rounded-2xl drop-shadow-sm">
                             <div class="p-6 border-b-2 border-dashed border-b-[#CED6FF]">
                                 <button class="text-base font-normal rounded-lg bg-white pt-2 pb-2 pl-4 pr-4 font_poppins">CloudSync</button>
-                                <h3 class="text-2xl font-medium mt-4 mb-4">Add Dark Mo de</h3>
+                                <h3 class="text-2xl font-medium mt-4 mb-4">Add Dark Mode</h3>
                                 <!-- text-ellipsis h-16-->
                                  <div class="bg-white p-4 rounded-lg">
                                     <p class=" text-gray-400 text-base font-normal line-clamp-2 text-ellipsis">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
@@ -128,7 +128,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
+                                    <button class="btnnn-completed bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -235,14 +235,17 @@
                             <p class="text-xl font-medium">Activity Log</p>
                         </div>
                         <div class="flex justify-center items-center mt-6">
-                            <button class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Clear History</button>
+                            <button id="clear-history" class="bg-[#3752FD] rounded-lg text-base font-medium text-white pt-3 pb-3 pl-5 pr-5 font_poppins">Clear History</button>
                         </div>
                     </div>
 
                     <!-- new things will be added here; #3752fd33 -->
-                     <div class="bg-[#F4F7FF] m-4 p-4 rounded-lg text-base font-medium">
-                        <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                     <div id="comment-container">
+                        <div class="bg-[#F4F7FF] m-4 p-4 rounded-lg text-base font-medium">
+                            <!-- <p>You have Complete The Task <span class="font-bold">Add Dark Mode</span> at 12:48:15 PM</p> -->
+                        </div>
                      </div>
+
                 </div>
             </div>
 
